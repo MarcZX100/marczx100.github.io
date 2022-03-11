@@ -1,0 +1,7 @@
+git add .
+git commit -m "Sexo"
+git push origin main
+
+
+git branch
+git switch main

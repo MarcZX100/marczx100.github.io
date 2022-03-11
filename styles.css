@@ -1,5 +1,6 @@
 body {
-    margin: 0;
-    background: #ff0000;
+    margin: 1;
+    background: #b8b8b8;
     text-align: center; 
+    text-emphasis: 10;
 }
