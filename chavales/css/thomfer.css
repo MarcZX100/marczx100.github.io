@@ -1,0 +1,277 @@
+.i2j1vt130fa,
+.i2j1vt130fb,
+.i2j1vt130fd,
+.i2j1vt130fi {
+    float: right;
+    height: auto !important;
+}
+
+.i2j1vt130fa {
+    width: 40%;
+}
+
+.i2j1vt130fb {
+    width: 50%;
+}
+
+.i2j1vt130fd,
+.i2j1vt130fi {
+    margin-top: 30px;
+    width: 50%;
+}
+
+.i2j1vt130fc {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    z-index: 0;
+}
+
+.i2j1vt130fp {
+    margin: 0;
+    text-align: center;
+    width: 315px;
+    z-index: 0;
+}
+
+.i2j1vt130fc .ad_title,
+.i2j1vt130fp .ad_title {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+.i2j1vt130fv {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.i2j1vt130fv div:first-child {
+    float: right;
+}
+
+.i2j1vt130fv iframe {
+    clear: both;
+    padding-bottom: 15px;
+}
+
+.i2j1vt130fu {
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 0;
+}
+
+.i2j1vt130fu.hd {
+    height: 60px;
+}
+
+.i2j1vt130fu.hd iframe {
+    height: 60px;
+}
+
+.i2j1vt130fu iframe {
+    margin: auto;
+}
+
+.i2j1vt130fu a>div {
+    width: 648px;
+    height: 64px;
+}
+
+
+.i2j1vt130fh {
+    padding: 0;
+    background: none;
+    border: 0;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.i2j1vt130fh iframe {
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+
+.i2j1vt130ff {
+    padding: 30px 0 0;
+    margin: 0 auto;
+    width: 966px;
+    text-align: center;
+    clear: both;
+}
+
+.i2j1vt130fw.i2j1vt130fc {
+    margin-top: 60px;
+    width: 50%;
+    float: right;
+}
+
+.i2j1vt130fw.i2j1vt130fe {
+    margin: 0 auto;
+    width: 315px;
+}
+
+ij06oqxx {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.i2j1vt130fw.i2j1vt130fc>ij06oqxx {
+    display: block;
+    margin: 5px auto 0;
+    text-align: center;
+    width: 315px;
+    z-index: 0;
+}
+
+.i2j1vt130fr,
+.i2j1vt130fr ij06oqxx {
+    background-size: contain;
+}
+
+.i2j1vt130fw.i2j1vt130fc.i2j1vt130fz {
+    margin-top: 15px;
+}
+
+.i2j1vt130fw.i2j1vt130fc.i2j1vt130fz ij06oqxx {
+    margin: 0;
+}
+
+.i2j1vt130fs,
+.i2j1vt130ft {
+    margin: 0 auto;
+}
+
+.i2j1vt130fw.i2j1vt130fb ij06oqxx {
+    margin: 5px auto 0;
+}
+
+.i2j1vt130fw.i2j1vt130fz ij06oqxx,
+.i2j1vt130fw.i2j1vt130fz iframe {
+    margin: 5px auto 0;
+}
+
+.i2j1vt130fw.i2j1vt130fz {
+    text-align: center;
+}
+
+.i2j1vt130fw.i2j1vt130fq {
+    float: right;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.i2j1vt130fw.i2j1vt130fq ij06oqxx {
+    margin: 5px auto 0;
+    text-align: center;
+    width: 315px;
+    z-index: 0;
+}
+
+.i2j1vt130fw.i2j1vt130fa {
+    width: 40%;
+}
+
+.i2j1vt130fw.i2j1vt130fa.i2j1vt130fg {
+    width: 40%;
+}
+
+.i2j1vt130fw.i2j1vt130fa ij06oqxx {
+    margin: 0 auto;
+}
+
+.i2j1vt130fw.i2j1vt130fb {
+    width: 50%;
+}
+
+@media (min-width:1350px) {
+
+    .i2j1vt130fa,
+    .i2j1vt130fb {
+        margin-top: 50px;
+    }
+
+    .i2j1vt130fd {
+        width: 40%;
+        margin-top: 50px;
+    }
+
+    .i2j1vt130fi {
+        width: 40%;
+        margin-top: 30px;
+    }
+
+    .i2j1vt130fc,
+    .i2j1vt130fp {
+        text-align: center;
+        z-index: 0;
+    }
+
+    .i2j1vt130fp {
+        margin: 0 auto;
+        background-color: #101010;
+    }
+
+    .i2j1vt130fc .ad_title,
+    .i2j1vt130fp .ad_title {
+        display: block;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .hd-thumbs .i2j1vt130fc .ad_title,
+    .hd-thumbs .i2j1vt130fc .ad-link {
+        display: block;
+    }
+
+    .i2j1vt130fu.hd {
+        height: 76px;
+        margin: auto;
+        width: 770px;
+    }
+
+    .i2j1vt130fu.hd iframe {
+        height: 76px !important;
+    }
+
+    .i2j1vt130fh {
+        padding: 20px;
+        border: 1px solid #1D1D1D;
+        background: #101010;
+    }
+
+    .i2j1vt130ff .removeAdsStyle {
+        font-size: 12px;
+    }
+
+    .i2j1vt130ff ul li.ps-list {
+        width: 16%;
+    }
+
+
+    .i2j1vt130fw.i2j1vt130fc {
+        width: 40%;
+        margin-top: 60px;
+    }
+
+    .i2j1vt130fw.i2j1vt130fc.i2j1vt130fz {
+        width: 40%;
+    }
+
+    .i2j1vt130fw.i2j1vt130fc.i2j1vt130fz ij06oqxx {
+        margin: 0 auto;
+    }
+
+    .i2j1vt130fw.i2j1vt130fq {
+        width: 40%;
+    }
+
+    .i2j1vt130fw.i2j1vt130fa.i2j1vt130fg {
+        width: 30%;
+    }
+}
