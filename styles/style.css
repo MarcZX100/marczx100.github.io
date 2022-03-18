@@ -6,8 +6,8 @@ html {
 }
 
 body {
-  width: 600px;
-  margin: 0 auto;
+  width: auto;
+  margin: 5 auto;
   --tw-bg-opacity: 1;
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
   padding: 0 20px 20px 20px;
