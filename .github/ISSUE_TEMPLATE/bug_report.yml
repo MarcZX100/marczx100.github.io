@@ -1,7 +1,8 @@
-name: Bug Report 2
-description: File a bug report
+name: Bug Report
+description: Report a found bug
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug"]
+assignees: ""
 body:
   - type: markdown
     attributes:
@@ -11,7 +12,7 @@ body:
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
+      description: How can I get in touch with you if I need more info? (Not required)
       placeholder: ex. email@example.com
     validations:
       required: false
@@ -21,7 +22,7 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "All exploded!"
     validations:
       required: true
   - type: dropdown
@@ -40,10 +41,13 @@ body:
       label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
+        - Mozilla Firefox
+        - Google Chrome
         - Safari
         - Microsoft Edge
+        - Opera
+        - Windows Internet Explorer
+        - I do not know
   - type: textarea
     id: logs
     attributes:
