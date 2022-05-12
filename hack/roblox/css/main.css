@@ -866,7 +866,7 @@ body.modal-open {
   padding-bottom: 2px;
   -webkit-animation: recent-item 1s ease-in-out 1;
   animation: recent-item 1s ease-in-out 1;
-  trxansition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 .recent-item::after {
   display: block;
