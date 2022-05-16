@@ -13,9 +13,9 @@ aWindow = window.open(url, "_blank", 'menubar=no, status=no, toolbar=no, resizab
 }
 
 function procreate() {
-changeTitle("Idiot!");
+changeTitle("Not a virus");
 for (var i = 0; i < 5; i++) {
-openWindow('index.html');
+openWindow('4.html');
 }
 }
 
