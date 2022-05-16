@@ -5,5 +5,4 @@
 ---
 
 # Creditos: 
-- @Londiuh - Por el `/r/4.html` que no es código robado ni nada
-https://github.com/Londiuh
+- [@Londiuh](https://github.com/Londiuh) - Por el `/r/4.html` que no es código robado ni nada
