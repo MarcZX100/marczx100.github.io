@@ -292,8 +292,7 @@ video {
   gap: 1rem;
 }
 .bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  background-color: #282828;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
@@ -351,11 +350,10 @@ video {
 }
 .text-gray-100,
 .text-purple-400 {
-  --tw-text-opacity: 1;
-  color: rgba(167, 139, 250, var(--tw-text-opacity));
+  color: #ff0000;
 }
 .text-gray-100 {
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
+  color: #F1F3FA;
 }
 @media (min-width: 640px) {
   .sm\:text-6xl {
