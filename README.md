@@ -6,3 +6,4 @@
 
 # Creditos: 
 - [@Londiuh](https://github.com/Londiuh) - Por el `/r/4.html` que no es código robado ni nada
+- [@Hakimel](https://github.com/hakimel/) - Por el `404.html`.
