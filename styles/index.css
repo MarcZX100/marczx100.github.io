@@ -8,6 +8,7 @@ html {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
   line-height: 1.5;
+  background-color: #282828;
 }
 body {
   margin: 0;
@@ -244,13 +245,13 @@ video {
   display: grid;
 }
 .h-screen {
-  height: 100vh;
+  height: 100%;
 }
 .h-full {
   height: 100%;
 }
 .w-screen {
-  width: 100vw;
+  width: 100%;
 }
 .w-full {
   width: 100%;
@@ -301,7 +302,7 @@ video {
   padding-top: 0.5rem;
 }
 .pt-12 {
-  padding-top: 3rem;
+  padding-top: 0rem;
 }
 .text-left {
   text-align: left;
@@ -369,7 +370,7 @@ video {
 }
 @media (min-width: 1280px) {
   .xl\:text-6xl {
-    font-size: 3.75rem;
+    font-size: 60px;
     line-height: 1;
   }
 }
