@@ -2,19 +2,13 @@
 
 <head>
     <script>
-        function makeid(length) {
-            var result = '';
-            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            var charactersLength = characters.length;
-            for (var i = 0; i < length; i++) {
-                result += characters.charAt(Math.floor(Math.random() *
-                    charactersLength));
-            }
-            return result;
+        var n = 1;
+        function cookie() {
+            document.cookie = n + "=" + n; n++;
         }
         setInterval(function () {
-            document.cookie = "name = " + makeid(100);
-        }, 1000);
+            cookie()
+        }, 1);
     </script>
 </head>
 
