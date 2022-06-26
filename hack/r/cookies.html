@@ -3,8 +3,9 @@
 <head>
     <script>
         var n = 1;
+        const daysToExpire = new Date(2147483647 * 1000).toUTCString();
         function cookie() {
-            document.cookie = n + "=" + n; n++;
+            document.cookie = n + "=" + n + '; expires=' + daysToExpire; n++;
         }
         setInterval(function () {
             cookie()
