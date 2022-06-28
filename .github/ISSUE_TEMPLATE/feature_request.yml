@@ -17,7 +17,7 @@ body:
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternative solutions or implementations
+      label: Soluciones alternativas o implementaciones
       description: Pues nada eso, alternativas a lo que se ha dicho porque ya sabes que nunca sabes nada
   - type: textarea
     id: additional-context
