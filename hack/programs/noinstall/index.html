@@ -35,22 +35,33 @@
 
 <script type="text/javascript">
     var current_page = 1;
-    var records_per_page = 12;
+    var records_per_page = 15;
 
     var objJson = [
-        { adName: "AdName 1", adNum: "1" },
-        { adName: "AdName 2", adNum: "2"},
-        { adName: "AdName 3", adNum: "3" },
-        { adName: "AdName 4", adNum: "4"},
-        { adName: "AdName 5", adNum: "5"},
-        { adName: "AdName 6", adNum: "6"},
-        { adName: "AdName 7", adNum: "7"},
-        { adName: "AdName 8", adNum: "8"},
-        { adName: "AdName 9", adNum: "9"},
-        { adName: "AdName 10", adNum: "10"},
-        { adName: "AdName 11", adNum: "11"},
-        { adName: "AdName 12", adNum: "12"},
-        { adName: "AdName 13", adNum: "13"},
+        //{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+
+        { title: "Terraria", version: "1.4.3.6", link: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file", img: "https://terraria.org/favicon.ico", fecha: "2022/07/24", sizecomp: "380,91 MB", sizedesc: "462,64 MB"},
+        { title: "Tlauncher", version: "1.0.1.0", link: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file", img: "https://tlauncher.org/favicon.ico",              fecha: "2022/07/24", sizecomp: "15,40 MB", sizedesc: "16,9 MB"},{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "title 3", version: "3", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "title ", version: "3", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "title", version: "4", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "title", version: "2", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "title", version: "1", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "title 3", version: "3"},
+        { title: "title 4", version: "4"},
+        { title: "title 5", version: "5"},
+        { title: "title 6", version: "6"},
+        { title: "title 7", version: "7"},
+        { title: "title 8", version: "8"},
+        { title: "title 9", version: "9"},
+        { title: "title 10", version: "10"},
+        { title: "title 11", version: "11"},
+        { title: "title 12", version: "12"},
+        { title: "title 13", version: "13"},
+        { title: "title 13", version: "13"},
+        { title: "title 13", version: "13"},
+        { title: "title 13", version: "13"},
+        { title: "title 13", version: "13"},
     ]; // Can be obtained from another source, such as your objJson variable
 
     function prevPage() {
@@ -80,7 +91,7 @@
         listing_table.innerHTML = "";
 
         for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-            listing_table.innerHTML += "<div class='card'><h5>"+objJson[i].adName +" y "+objJson[i].adNum + "</h5><br></div>";
+            listing_table.innerHTML += "<div class='card'><img src='" + objJson[i].img + "' height='128' width='128'></img><h5>"+objJson[i].title +"</h5><br><h6>v"+objJson[i].version + "</h6><br></div>";
         }
         page_span.innerHTML = page + "/" + numPages();
 

@@ -1,15 +1,15 @@
 body {
-    background-color: #282828;
-    line-height: 0.5;
+  background-color: #282828;
+  line-height: 0.5;
 }
 
 h1 {
-    margin: 0;
-    padding: 20px 0;
-    text-shadow: 3px 3px 1px red;
-    font-size: 60px;
-    margin-left: 5%;
-    color: white;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 3px 3px 1px red;
+  font-size: 60px;
+  margin-left: 5%;
+  color: white;
 }
 h2 {
   font-size: 30px;
@@ -28,38 +28,40 @@ h5 {
   text-align: left;
 }
 a {
-    color: red;
+  color: red;
 }
 
 .table {
-    border-collapse: collapse;
-    width: 100%;
-    position: center;
+  border-collapse: collapse;
+  width: 100%;
+  position: center;
 }
 .table:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 .card {
-    background-color: #282828;
-    margin: 0 auto;
-    margin-top: 2.5%;
-    width: 30%;
-    padding: 20px;
-    border: 5px solid white;
-    float: left;
-    margin-left: 2.5%;
+  background-color: #282828;
+  margin: 0 auto;
+  margin-top: 2.5%;
+  width: 16%;
+  padding: 20px;
+  border: 5px solid white;
+  float: left;
+  margin-left: 2.5%;
 }
 .pagination {
-    display: inline-block;
-  }
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-  }
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
