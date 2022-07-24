@@ -30,12 +30,25 @@ h5 {
 a {
     color: red;
 }
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+.table:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .card {
     background-color: #282828;
     margin: 0 auto;
-    width: 80%;
+    width: 30%;
     padding: 20px;
     border: 5px solid white;
+    float: left
 }
 .pagination {
     display: inline-block;
