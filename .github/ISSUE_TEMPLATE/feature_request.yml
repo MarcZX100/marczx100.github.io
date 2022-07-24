@@ -1,45 +1,24 @@
-name: Feature request 2
-description: Request a new feature (discord.js accepts documented features of the official Discord developer API only!)
+name: Feature Request
+description: Request a new feature.
 labels: [feature request]
 body:
   - type: markdown
     attributes:
       value: |
-        We can only implement features that Discord publishes, documents and merges into the Discord API documentation.
-        We do not implement unreleased features.
-        Use Discord for questions: https://discord.gg/djs
-  - type: dropdown
-    id: package
-    attributes:
-      label: Which package is the feature request for?
-      options:
-        - discord.js
-        - builders
-        - collection
-        - rest
-        - voice
-    validations:
-      required: true
+        Voy a meter lo que me de la gana
   - type: textarea
     id: description
     attributes:
       label: Feature
-      description: A clear and concise description of what the problem is, or what feature you want to be implemented.
-      placeholder: I'm always frustrated when..., Discord has recently released..., A good addition would be...
-    validations:
-      required: true
-  - type: textarea
-    id: solution
-    attributes:
-      label: Ideal solution or implementation
-      description: A clear and concise description of what you want to happen.
+      description: Una explicación de la idea así a lo general y luego partes pequeñitas como yo que sé, que redirija a los 5 segundos o hacer x cosita pequeña
+      placeholder: Estaría bien añadir x y x por..., Se podría hacer que el div tenga 69 de id porque..., ¿Qué? so...
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternative solutions or implementations
-      description: A clear and concise description of any alternative solutions or features you have considered.
+      label: Soluciones alternativas o implementaciones
+      description: Pues nada eso, alternativas a lo que se ha dicho porque ya sabes que nunca sabes nada
   - type: textarea
     id: additional-context
     attributes:
