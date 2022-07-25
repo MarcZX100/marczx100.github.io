@@ -41,8 +41,8 @@
         //{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
 
         { title: "Terraria", version: "1.4.3.6", link: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file", img: "https://terraria.org/favicon.ico", fecha: "2022/07/24", sizecomp: "380,91 MB", sizedesc: "462,64 MB"},
-        { title: "Tlauncher", version: "1.0.1.0", link: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file", img: "https://tlauncher.org/favicon.ico",              fecha: "2022/07/24", sizecomp: "15,40 MB", sizedesc: "16,9 MB"},{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-        { title: "title 3", version: "3", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+        { title: "Tlauncher", version: "1.0.1.0", link: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file", img: "https://tlauncher.org/favicon.ico",              fecha: "2022/07/24", sizecomp: "15,40 MB", sizedesc: "16,9 MB"},
+        { title: "Counter Strike GT", version: "1.6", link: "https://www.mediafire.com/file/ltjf6ylty95mfy5/Counter+Strike+1.6+GT+Di_potato_pelator.zip/file", img: "https://icon-library.com/images/counter-strike-icon/counter-strike-icon-8.jpg", fecha: "2022/07/25", sizecomp: "207,11 MB", sizedesc: "347 MB"},
         { title: "title ", version: "3", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
         { title: "title", version: "4", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
         { title: "title", version: "2", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
@@ -91,7 +91,7 @@
         listing_table.innerHTML = "";
 
         for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-            listing_table.innerHTML += "<div class='card'><img src='" + objJson[i].img + "' height='128' width='128'></img><h5>"+objJson[i].title +"</h5><br><h6>v"+objJson[i].version + "</h6><br></div>";
+            listing_table.innerHTML += "<div class='card'><img src='" + objJson[i].img + "' height='128' width='128'></img><h5><a href='"+objJson[i].link+"'>"+objJson[i].title +"</a></h5><br><h6>v"+objJson[i].version + "</h6><br></div>";
         }
         page_span.innerHTML = page + "/" + numPages();
 
