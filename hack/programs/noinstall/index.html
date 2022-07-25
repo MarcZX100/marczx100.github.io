@@ -174,9 +174,10 @@
     
     function popupOn(title) {
       document.getElementById("popup").style.display = "block";
-      var found = fetchTitle(title);
+      var game = fetchTitle(title)[0];
       document.getElementById("popup").onclick = popupOff;
-      document.getElementById("popup").innerHTML = "<h2>"+ found[0].title +"</h2>"
+      document.getElementById("popup").innerHTML = "<div class='thing'><div class='close'>X</div><h2><img src='"+game.img+"'></img>"+ game.title +
+      "</h2></div>"
     };
     
     function popupOff() {

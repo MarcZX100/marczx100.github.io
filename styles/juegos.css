@@ -78,3 +78,19 @@ a {
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
+#popup .thing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+}
+#popup .thing img {
+  width: 40px;
+  height: 40px;
+}
