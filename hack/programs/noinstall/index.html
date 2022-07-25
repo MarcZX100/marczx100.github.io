@@ -1,121 +1,243 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-        <!--INDEX-->
-        <link rel="stylesheet" href="../../../styles/juegos.css">
-        <meta charset="utf-8">
-        <link rel="icon" href="../../../files/favicon.jpg">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="description" content="Mi web">
-        <title>Si</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
-        <!--INDEX-->
-    
-        <!--NAVBAR-->
-        <link rel="stylesheet" href="../../../styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $(".navbar-light .dmenu").hover(
-              function () {
-                $(this).find(".sm-menu").first().stop(true, true).slideDown(150);
-              },
-              function () {
-                $(this).find(".sm-menu").first().stop(true, true).slideUp(105);
-              }
-            );
-          });
-        </script>
-        <!---NAVBAR-->
+  <!--INDEX-->
+  <link rel="stylesheet" href="../../../styles/juegos.css">
+  <meta charset="utf-8">
+  <link rel="icon" href="../../../files/favicon.jpg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mi web">
+  <title>Si</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <!--INDEX-->
 
-<script type="text/javascript">
+  <!--NAVBAR-->
+  <link rel="stylesheet" href="../../../styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".navbar-light .dmenu").hover(
+        function () {
+          $(this).find(".sm-menu").first().stop(true, true).slideDown(150);
+        },
+        function () {
+          $(this).find(".sm-menu").first().stop(true, true).slideUp(105);
+        }
+      );
+    });
+  </script>
+  <!---NAVBAR-->
+
+  <script type="text/javascript">
     var current_page = 1;
     var records_per_page = 15;
 
     var objJson = [
-        //{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-
-        { title: "Terraria", version: "1.4.3.6", link: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file", img: "https://terraria.org/favicon.ico", fecha: "2022/07/24", sizecomp: "380,91 MB", sizedesc: "462,64 MB"},
-        { title: "Tlauncher", version: "1.0.1.0", link: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file", img: "https://tlauncher.org/favicon.ico",              fecha: "2022/07/24", sizecomp: "15,40 MB", sizedesc: "16,9 MB"},
-        { title: "Counter Strike GT", version: "1.6", link: "https://www.mediafire.com/file/hzffbfjsy08jbnf/Counter+Strike+1.6+GT+Di_potato_pelator.7z/file", img: "https://icon-library.com/images/counter-strike-icon/counter-strike-icon-8.jpg", fecha: "2022/07/25", sizecomp: "152 MB", sizedesc: "347 MB"},
-        { title: "title ", version: "3", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-        { title: "title", version: "4", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-        { title: "title", version: "2", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-        { title: "title", version: "1", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-        { title: "title 3", version: "3"},
-        { title: "title 4", version: "4"},
-        { title: "title 5", version: "5"},
-        { title: "title 6", version: "6"},
-        { title: "title 7", version: "7"},
-        { title: "title 8", version: "8"},
-        { title: "title 9", version: "9"},
-        { title: "title 10", version: "10"},
-        { title: "title 11", version: "11"},
-        { title: "title 12", version: "12"},
-        { title: "title 13", version: "13"},
-        { title: "title 13", version: "13"},
-        { title: "title 13", version: "13"},
-        { title: "title 13", version: "13"},
-        { title: "title 13", version: "13"},
+      //{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
+      {
+        title: "Terraria",
+        version: "1.4.3.6",
+        link: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
+        img: "https://terraria.org/favicon.ico",
+        fecha: "2022/07/24",
+        sizecomp: "380,91 MB",
+        sizedesc: "462,64 MB"
+      },
+      {
+        title: "Tlauncher",
+        version: "1.0.1.0",
+        link: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file",
+        img: "https://tlauncher.org/favicon.ico",
+        fecha: "2022/07/24",
+        sizecomp: "15,40 MB",
+        sizedesc: "16,9 MB"
+      },
+      {
+        title: "Counter Strike GT",
+        version: "1.6",
+        link: "https://www.mediafire.com/file/hzffbfjsy08jbnf/Counter+Strike+1.6+GT+Di_potato_pelator.7z/file",
+        img: "https://icon-library.com/images/counter-strike-icon/counter-strike-icon-8.jpg",
+        fecha: "2022/07/25",
+        sizecomp: "152 MB",
+        sizedesc: "347 MB"
+      },
+      {
+        title: "title ",
+        version: "3",
+        link: "",
+        img: "",
+        fecha: "",
+        sizecomp: "",
+        sizedesc: ""
+      },
+      {
+        title: "title",
+        version: "4",
+        link: "",
+        img: "",
+        fecha: "",
+        sizecomp: "",
+        sizedesc: ""
+      },
+      {
+        title: "title",
+        version: "2",
+        link: "",
+        img: "",
+        fecha: "",
+        sizecomp: "",
+        sizedesc: ""
+      },
+      {
+        title: "title",
+        version: "1",
+        link: "",
+        img: "",
+        fecha: "",
+        sizecomp: "",
+        sizedesc: ""
+      },
+      {
+        title: "title 3",
+        version: "3"
+      },
+      {
+        title: "title 4",
+        version: "4"
+      },
+      {
+        title: "title 5",
+        version: "5"
+      },
+      {
+        title: "title 6",
+        version: "6"
+      },
+      {
+        title: "title 7",
+        version: "7"
+      },
+      {
+        title: "title 8",
+        version: "8"
+      },
+      {
+        title: "title 9",
+        version: "9"
+      },
+      {
+        title: "title 10",
+        version: "10"
+      },
+      {
+        title: "title 11",
+        version: "11"
+      },
+      {
+        title: "title 12",
+        version: "12"
+      },
+      {
+        title: "title 13",
+        version: "13"
+      },
+      {
+        title: "title 13",
+        version: "13"
+      },
+      {
+        title: "title 13",
+        version: "13"
+      },
+      {
+        title: "title 13",
+        version: "13"
+      },
+      {
+        title: "title 13",
+        version: "13"
+      },
     ]; // Can be obtained from another source, such as your objJson variable
 
+    function fetchTitle(title) {
+      return objJson.filter(
+          function(objJson){ return objJson.title == title }
+      );
+    }
+    
+    function popupOn(title) {
+      document.getElementById("popup").style.display = "block";
+      var found = fetchTitle(title);
+      document.getElementById("popup").onclick = popupOff;
+      document.getElementById("popup").innerHTML = "<h2>"+ found[0].title +"</h2>"
+    };
+    
+    function popupOff() {
+      document.getElementById("popup").style.display = "none";
+    }; //
+
     function prevPage() {
-        if (current_page > 1) {
-            current_page--;
-            changePage(current_page);
-        }
+      if (current_page > 1) {
+        current_page--;
+        changePage(current_page);
+      }
     }
 
     function nextPage() {
-        if (current_page < numPages()) {
-            current_page++;
-            changePage(current_page);
-        }
+      if (current_page < numPages()) {
+        current_page++;
+        changePage(current_page);
+      }
     }
 
     function changePage(page) {
-        var btn_next = document.getElementById("btn_next");
-        var btn_prev = document.getElementById("btn_prev");
-        var listing_table = document.getElementById("pagination");
-        var page_span = document.getElementById("page");
+      var btn_next = document.getElementById("btn_next");
+      var btn_prev = document.getElementById("btn_prev");
+      var listing_table = document.getElementById("pagination");
+      var page_span = document.getElementById("page");
 
-        // Validate page
-        if (page < 1) page = 1;
-        if (page > numPages()) page = numPages();
+      // Validate page
+      if (page < 1) page = 1;
+      if (page > numPages()) page = numPages();
 
-        listing_table.innerHTML = "";
+      listing_table.innerHTML = "";
 
-        for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-            listing_table.innerHTML += "<div class='card'><img src='" + objJson[i].img + "' height='128' width='128'></img><h5><a href='"+objJson[i].link+"'>"+objJson[i].title +"</a></h5><br><h6>v"+objJson[i].version + "</h6><br></div>";
-        }
-        page_span.innerHTML = page + "/" + numPages();
+      for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
+        listing_table.innerHTML += "<div class='card'>" +
+          "<img src='" + objJson[i].img +"' height='128' width='128'></img>"+
+          "<h5><a href='javascript:void(0)' onclick='popupOn(" + "\"" + objJson[i].title.toString() + "\"" + ")'>" + objJson[i].title + "</a></h5>"+
+            "<br><h6>v" + objJson[i].version + "</h6><br></div>"
+      }
+      page_span.innerHTML = page + "/" + numPages();
 
-        if (page == 1) {
-            btn_prev.style.visibility = "hidden";
-        } else {
-            btn_prev.style.visibility = "visible";
-        }
+      if (page == 1) {
+        btn_prev.style.visibility = "hidden";
+      } else {
+        btn_prev.style.visibility = "visible";
+      }
 
-        if (page == numPages()) {
-            btn_next.style.visibility = "hidden";
-        } else {
-            btn_next.style.visibility = "visible";
-        }
+      if (page == numPages()) {
+        btn_next.style.visibility = "hidden";
+      } else {
+        btn_next.style.visibility = "visible";
+      }
     }
 
     function numPages() {
-        return Math.ceil(objJson.length / records_per_page);
+      return Math.ceil(objJson.length / records_per_page);
     }
 
     window.onload = function () {
-        changePage(1);
+      changePage(1);
     };
-</script>
+  </script>
 
 
 </head>
@@ -123,63 +245,63 @@
 
 <!--NAVBAR HTML-->
 <nav class="navbar navbar-expand-sm navbar-dark" style="width: 100%; background-color: #282828;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/sitemap.html">Index</a>
-        </li>
-        <li class="nav-item dropdown dmenu">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-            Generadores!!!
-          </a>
-          <div class="dropdown-menu sm-menu">
-            <a class="dropdown-item" href="/hack/roblox/">Robux</a>
-            <a class="dropdown-item" href="/hack/fortnite/">VBucks</a>
-            <a class="dropdown-item" href="#">service 3</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Call</a>
-        </li>
-        <li class="nav-item dropdown dmenu">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Bromitas
-            </a>
-            <div class="dropdown-menu sm-menu">
-              <a class="dropdown-item" href="/r/4.html">Mmmm culete</a>
-              <a class="dropdown-item" href="/r/5.html">Flood</a>
-              <a class="dropdown-item" href="/r/6.html">RAM con cuquis</a>
-              <a class="dropdown-item" href="/hack/r/cookies.html">Cookies</a>
-              <a class="dropdown-item" href="/r/7.html">Errores CMD</a>
-              <a class="dropdown-item" href="#">Link 6</a>
-            </div>
-          </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- NAVBAR HTML-->
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sitemap.html">Index</a>
+      </li>
+      <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Generadores!!!
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="/hack/roblox/">Robux</a>
+          <a class="dropdown-item" href="/hack/fortnite/">VBucks</a>
+          <a class="dropdown-item" href="#">service 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Call</a>
+      </li>
+      <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Bromitas
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <a class="dropdown-item" href="/r/4.html">Mmmm culete</a>
+          <a class="dropdown-item" href="/r/5.html">Flood</a>
+          <a class="dropdown-item" href="/r/6.html">RAM con cuquis</a>
+          <a class="dropdown-item" href="/hack/r/cookies.html">Cookies</a>
+          <a class="dropdown-item" href="/r/7.html">Errores CMD</a>
+          <a class="dropdown-item" href="#">Link 6</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- NAVBAR HTML-->
 
 <body>
-<div class="table">
+  <div id="popup"></div>
+  <div class="table">
     <div id="pagination"></div>
-</div>
+  </div>
 
-<div class="pagination">
-  <a href="javascript:prevPage()" id="btn_prev">❮</a>
-  <a href="javascript:nextPage()" id="btn_next">❯</a>
-  <a>Pag: <span id="page"></span></a>
-</div>
+  <div class="pagination">
+    <a href="javascript:prevPage()" id="btn_prev">❮</a>
+    <a href="javascript:nextPage()" id="btn_next">❯</a>
+    <a>Pag: <span id="page"></span></a>
+  </div>
 
 </body>
-</html>
