@@ -79,7 +79,6 @@ a {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.829); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
 }
 #popup .thing {
   position: absolute;
@@ -92,8 +91,31 @@ a {
   width: 60%;
   height: 60%;
   margin: auto;
+  text-align: center;
 }
 #popup .thing img {
   width: 40px;
   height: 40px;
+  border-radius: 10%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 4%;
+}
+.boton {
+  background-color: #282828;
+  margin: 5px;
+  border: 2px solid rgb(138, 138, 138);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: white;
+  color: #282828;
 }

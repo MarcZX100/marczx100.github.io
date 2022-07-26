@@ -177,8 +177,8 @@
       document.getElementById("popup").style.display = "block";
       var game = fetchTitle(title)[0];
       //document.getElementById("popup").onclick = popupOff;
-      document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>X</div><h2><img src='"+game.img+"'></img>"+ game.title +
-      "</h2><br><button href=\""+ game.linkdrive + "\">GDrive</button></div>"
+      document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>x</div><h2><img src='"+game.img+"'></img>"+ game.title +
+      "</h2><br><div class='boton'>GDrive</div><button href=\""+ game.linkdrive + "\">GDrive</button></div>"
     };
     
     function popupOff() {
