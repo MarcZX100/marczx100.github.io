@@ -45,6 +45,7 @@
         title: "Terraria",
         version: "1.4.3.6",
         link: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
+        linkdrive: "https://drive.google.com/u/0/uc?id=1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC&export=download",
         img: "https://terraria.org/favicon.ico",
         fecha: "2022/07/24",
         sizecomp: "380,91 MB",
@@ -175,9 +176,9 @@
     function popupOn(title) {
       document.getElementById("popup").style.display = "block";
       var game = fetchTitle(title)[0];
-      document.getElementById("popup").onclick = popupOff;
-      document.getElementById("popup").innerHTML = "<div class='thing'><div class='close'>X</div><h2><img src='"+game.img+"'></img>"+ game.title +
-      "</h2></div>"
+      //document.getElementById("popup").onclick = popupOff;
+      document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>X</div><h2><img src='"+game.img+"'></img>"+ game.title +
+      "</h2><br><button href=\""+ game.linkdrive + "\">GDrive</button></div>"
     };
     
     function popupOff() {
