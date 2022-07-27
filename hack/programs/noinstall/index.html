@@ -904,6 +904,13 @@
       }
     }
 
+    function lastPage() {
+      if (current_page < numPages()) {
+        current_page = numPages();
+        changePage(current_page);
+      }
+    }
+
     function changePage(page) {
       var btn_next = document.getElementById("btn_next");
       var btn_prev = document.getElementById("btn_prev");
@@ -934,8 +941,10 @@
 
       if (page == numPages()) {
         btn_next.style.visibility = "hidden";
+        btn_last.style.visibility = "hidden";
       } else {
         btn_next.style.visibility = "visible";
+        btn_last.style.visibility = "visible";
       }
     }
 
@@ -1011,6 +1020,7 @@
     <a href="javascript:firstPage()" id="btn_first">❮❮</a>
     <a href="javascript:prevPage()" id="btn_prev">❮</a>
     <a href="javascript:nextPage()" id="btn_next">❯</a>
+    <a href="javascript:lastPage()" id="btn_last">❯❯</a>
     <a>Pag: <span id="page"></span></a>
   </div>
 
