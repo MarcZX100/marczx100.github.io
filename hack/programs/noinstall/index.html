@@ -35,829 +35,11 @@
   </script>
   <!---NAVBAR-->
 
+  <script src="data.js"></script> <!--Importar el json-->
   <script type="text/javascript">
     var current_page = 1;
     var records_per_page = 15;
 
-    var objJson = [
-      //{ title: "", version: "", link: "", img: "", fecha: "", sizecomp: "", sizedesc: ""},
-      {
-        title: "Terraria",
-        version: "1.4.3.6",
-        desc: "Terraria es un juego de supervivencia en el que el jugador debe construir una ciudad para sobrevivir. El mapa está formado por una gran cantidad de bloques que se pueden construir y destruir.",
-        linkmediafire: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
-        linkdrive: "https://drive.google.com/file/d/1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC/view",
-        link3: "",
-        img: "https://terraria.org/favicon.ico",
-        fecha: "2022/07/24",
-        sizecomp: "380,91 MB",
-        sizedesc: "462,64 MB",
-        notas: ""
-      },
-      {
-        title: "Tlauncher",
-        version: "1.0.1.0",
-        desc: "Tlauncher es una aplicación que permite que los usuarios puedan jugar a Minecraft sin necesidad de la versión original del juego.",
-        linkmediafire: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file",
-        linkdrive: "https://drive.google.com/file/d/1VF91HGXgavLxWsW48l5QjQO1symA21b6/view?usp=sharing",
-        link3: "",
-        img: "https://tlauncher.org/favicon.ico",
-        fecha: "2022/07/24",
-        sizecomp: "15,40 MB",
-        sizedesc: "16,9 MB",
-        notas: ""
-      },
-      {
-        title: "Counter Strike GT",
-        version: "1.6",
-        desc: "Counter Strike Global Offensive es un juego de disparos en primera persona que se desarrolló en el año 2000 y se publicó en el año 2004.",
-        linkmediafire: "https://www.mediafire.com/file/hzffbfjsy08jbnf/Counter+Strike+1.6+GT+Di_potato_pelator.7z/file",
-        linkdrive: "https://drive.google.com/file/d/1766NqTOb4F3r5T61VC_mVJlw1BePgMGI/view?usp=sharing",
-        link3: "",
-        img: "https://icon-library.com/images/counter-strike-icon/counter-strike-icon-8.jpg",
-        fecha: "2022/07/25",
-        sizecomp: "152 MB",
-        sizedesc: "347 MB",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "3",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "4",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "5",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "6",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "7",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "8",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "9",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "10",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "11",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "12",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "13",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "14",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "15",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "16",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "17",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "18",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },      {
-        title: "title",
-        version: "8",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "9",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "10",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "11",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "12",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "13",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "14",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "15",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "16",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "17",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "18",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },      {
-        title: "title",
-        version: "8",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "9",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "10",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "11",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "12",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "13",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "14",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "15",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "16",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "17",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "18",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "8",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "9",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "10",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "11",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "12",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "13",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "14",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "15",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "16",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "17",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "18",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },      {
-        title: "title",
-        version: "8",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "9",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "10",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "11",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "12",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "13",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "14",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "15",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "16",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "17",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-      {
-        title: "title",
-        version: "18",
-        desc: "",
-        linkmediafire: "",
-        linkdrive: "",
-        link3: "",
-        img: "",
-        fecha: "",
-        sizecomp: "",
-        sizedesc: "",
-        notas: ""
-      },
-    ]; // Can be obtained from another source, such as your objJson variable
 
     window.onkeydown = function (event) {
       if (event.keyCode == 27) {
@@ -883,37 +65,55 @@
       document.getElementById("popup").style.display = "none";
     }; //
 
-    function firstPage() {
-      if (current_page > 1) {
-        current_page = 1;
-        changePage(current_page);
-      }
-    }
-
     function prevPage() {
       if (current_page > 1) {
         current_page--;
         changePage(current_page);
       }
-    }
+    };
+
+    function prevXPage(num) {
+      if (current_page > num) {
+        current_page -= num;
+        changePage(current_page);
+      }
+    };
+
+    function firstPage() {
+      if (current_page > 1) {
+        current_page = 1;
+        changePage(current_page);
+      }
+    };
 
     function nextPage() {
       if (current_page < numPages()) {
         current_page++;
         changePage(current_page);
       }
-    }
+    };
+
+    function nextXPage(num) {
+      if (current_page < numPages()) {
+        current_page += num;
+        changePage(current_page);
+      }
+    };
 
     function lastPage() {
       if (current_page < numPages()) {
         current_page = numPages();
         changePage(current_page);
       }
-    }
+    };
 
     function changePage(page) {
       var btn_next = document.getElementById("btn_next");
+      var btn_next2 = document.getElementById("btn_next2");
+      var btn_next3 = document.getElementById("btn_next3");
       var btn_prev = document.getElementById("btn_prev");
+      var btn_prev2 = document.getElementById("btn_prev2");
+      var btn_prev3 = document.getElementById("btn_prev3");
       var listing_table = document.getElementById("pagination");
       var page_span = document.getElementById("page");
 
@@ -931,22 +131,51 @@
       }
       page_span.innerHTML = page + "/" + numPages();
 
-      if (page == 1) {
-        btn_prev.style.visibility = "hidden";
-        btn_first.style.visibility = "hidden";
-      } else {
+
+      if (page >= 4) {
+        btn_prev3.style.visibility = "visible";
+        btn_prev2.style.visibility = "visible";
         btn_prev.style.visibility = "visible";
         btn_first.style.visibility = "visible";
-      }
+      } else if (page == 3) {
+        btn_prev2.style.visibility = "visible";
+        btn_prev.style.visibility = "visible";
+        btn_first.style.visibility = "visible";
+        btn_prev3.style.visibility = "hidden";
+      } else if (page == 2) {
+        btn_prev.style.visibility = "visible";
+        btn_first.style.visibility = "visible";
+        btn_prev2.style.visibility = "hidden";
+        btn_prev3.style.visibility = "hidden";
+      } else if (page == 1) {
+        btn_prev.style.visibility = "hidden";
+        btn_first.style.visibility = "hidden";
+        btn_prev2.style.visibility = "hidden";
+        btn_prev3.style.visibility = "hidden";
+      };
 
-      if (page == numPages()) {
-        btn_next.style.visibility = "hidden";
-        btn_last.style.visibility = "hidden";
-      } else {
+      if (page <= numPages() - 3) {
+        btn_next3.style.visibility = "visible";
+        btn_next2.style.visibility = "visible";
         btn_next.style.visibility = "visible";
         btn_last.style.visibility = "visible";
+      } else if (page == numPages() - 2) {
+        btn_next3.style.visibility = "hidden";
+        btn_next2.style.visibility = "visible";
+        btn_next.style.visibility = "visible";
+        btn_last.style.visibility = "visible";
+      } else if (page == numPages() - 1) {
+        btn_next.style.visibility = "visible";
+        btn_last.style.visibility = "visible";
+        btn_next2.style.visibility = "hidden";
+        btn_next3.style.visibility = "hidden";
+      } else if (page == numPages()) {
+        btn_next.style.visibility = "hidden";
+        btn_last.style.visibility = "hidden";
+        btn_next2.style.visibility = "hidden";
+        btn_next3.style.visibility = "hidden";
       }
-    }
+      };
 
     function numPages() {
       return Math.ceil(objJson.length / records_per_page);
@@ -1018,10 +247,14 @@
 
   <div class="pagination">
     <a href="javascript:firstPage()" id="btn_first">❮❮</a>
-    <a href="javascript:prevPage()" id="btn_prev">❮</a>
-    <a href="javascript:nextPage()" id="btn_next">❯</a>
-    <a href="javascript:lastPage()" id="btn_last">❯❯</a>
+    <a href="javascript:prevXPage(3)" id="btn_prev3">❮ -3</a>
+    <a href="javascript:prevXPage(2)" id="btn_prev2">❮ -2</a>
+    <a href="javascript:prevPage()" id="btn_prev">❮ -1</a>
     <a>Pag: <span id="page"></span></a>
+    <a href="javascript:nextPage()" id="btn_next">❯ +1</a>
+    <a href="javascript:nextXPage(2)" id="btn_next2">❯ +2</a>
+    <a href="javascript:nextXPage(3)" id="btn_next3">❯ +3</a>
+    <a href="javascript:lastPage()" id="btn_last">❯❯</a>
   </div>
 
 </body>
