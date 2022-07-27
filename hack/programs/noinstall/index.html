@@ -44,6 +44,7 @@
       {
         title: "Terraria",
         version: "1.4.3.6",
+        desc: "Terraria es un juego de supervivencia en el que el jugador debe construir una ciudad para sobrevivir. El mapa está formado por una gran cantidad de bloques que se pueden construir y destruir.",
         linkmediafire: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
         linkdrive: "https://drive.google.com/file/d/1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC/view",
         link3: "",
@@ -55,6 +56,7 @@
       {
         title: "Tlauncher",
         version: "1.0.1.0",
+        desc: "Tlauncher es una aplicación que permite que los usuarios puedan jugar a Minecraft sin necesidad de la versión original del juego.",
         linkmediafire: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file",
         linkdrive: "https://drive.google.com/file/d/1VF91HGXgavLxWsW48l5QjQO1symA21b6/view?usp=sharing",
         link3: "",
@@ -66,6 +68,7 @@
       {
         title: "Counter Strike GT",
         version: "1.6",
+        desc: "Counter Strike Global Offensive es un juego de disparos en primera persona que se desarrolló en el año 2000 y se publicó en el año 2004.",
         linkmediafire: "https://www.mediafire.com/file/hzffbfjsy08jbnf/Counter+Strike+1.6+GT+Di_potato_pelator.7z/file",
         linkdrive: "https://drive.google.com/file/d/1766NqTOb4F3r5T61VC_mVJlw1BePgMGI/view?usp=sharing",
         link3: "",
@@ -183,7 +186,7 @@
       var game = fetchTitle(title)[0];
       var botoncitos = ((game.linkdrive != "") ? "<button class='boton' onclick='window.open(\"" + game.linkdrive + "\")' >Gdrive</button>" : "") + ((game.linkmediafire != "") ? "<button class='boton' onclick='window.open(\"" + game.linkmediafire + "\")'>MediaFire</button>" : "") + ((game.link3 != "") ? "<button class='boton' onclick='window.open(\"" + game.link3 + "\")' >Otro</button>" : "");
       document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>x</div><h2><img src='"+game.img+"'></img>"+ game.title +
-      "</h2><br>"+botoncitos+"</div>"
+      "</h2><br><h4 class='vsize'><strong>v"+game.version+"</strong> - Subido el día "+ game.fecha+" con un peso de "+ game.sizecomp+".</h4><br>"+botoncitos+"</div>"
     };
     
     function popupOff() {

@@ -93,6 +93,10 @@ a {
   margin: auto;
   text-align: center;
 }
+#popup .thing .vsize {
+  font-size: 15px;
+  text-align: left;
+}
 #popup .thing .close {
   position: absolute;
   top: 0px;
