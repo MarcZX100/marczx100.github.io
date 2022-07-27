@@ -175,20 +175,26 @@
       },
     ]; // Can be obtained from another source, such as your objJson variable
 
+    window.onkeydown = function (event) {
+      if (event.keyCode == 27) {
+        popupOff();
+      }
+    };
+
     function fetchTitle(title) {
       return objJson.filter(
-          function(objJson){ return objJson.title == title }
+        function (objJson) { return objJson.title == title }
       );
     }
-    
+
     function popupOn(title) {
       document.getElementById("popup").style.display = "block";
       var game = fetchTitle(title)[0];
       var botoncitos = ((game.linkdrive != "") ? "<button class='boton' onclick='window.open(\"" + game.linkdrive + "\")' >Gdrive</button>" : "") + ((game.linkmediafire != "") ? "<button class='boton' onclick='window.open(\"" + game.linkmediafire + "\")'>MediaFire</button>" : "") + ((game.link3 != "") ? "<button class='boton' onclick='window.open(\"" + game.link3 + "\")' >Otro</button>" : "");
-      document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>x</div><h2><img src='"+game.img+"'></img>"+ game.title +
-      "</h2><br><h4 class='vsize'><strong>v"+game.version+"</strong> - Subido el día "+ game.fecha+" con un peso de "+ game.sizecomp+".</h4><br>"+botoncitos+"</div>"
+      document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>x</div><h2><img src='" + game.img + "'></img>" + game.title +
+        "</h2><br><h4 class='vsize'><strong>v" + game.version + "</strong> - Subido el día " + game.fecha + " con un peso de " + game.sizecomp + ".</h4><br>" + game.desc + "<br>" + botoncitos + "</div>"
     };
-    
+
     function popupOff() {
       document.getElementById("popup").style.display = "none";
     }; //
@@ -221,9 +227,9 @@
 
       for (var i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
         listing_table.innerHTML += "<div class='card'>" +
-          "<img src='" + objJson[i].img +"' height='128' width='128'></img>"+
-          "<h5><a href='javascript:void(0)' onclick='popupOn(" + "\"" + objJson[i].title.toString() + "\"" + ")'>" + objJson[i].title + "</a></h5>"+
-            "<br><h6>v" + objJson[i].version + "</h6><br></div>"
+          "<img src='" + objJson[i].img + "' height='128' width='128'></img>" +
+          "<h5><a href='javascript:void(0)' onclick='popupOn(" + "\"" + objJson[i].title.toString() + "\"" + ")'>" + objJson[i].title + "</a></h5>" +
+          "<br><h6>v" + objJson[i].version + "</h6><br></div>"
       }
       page_span.innerHTML = page + "/" + numPages();
 
