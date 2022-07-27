@@ -93,6 +93,18 @@ a {
   margin: auto;
   text-align: center;
 }
+#popup .thing .close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #282828;
+  cursor: pointer;
+}
+#popup .thing .close:hover {
+  color: #ff0000;
+}
 #popup .thing img {
   width: 40px;
   height: 40px;

@@ -44,8 +44,9 @@
       {
         title: "Terraria",
         version: "1.4.3.6",
-        link: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
-        linkdrive: "https://drive.google.com/u/0/uc?id=1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC&export=download",
+        linkmediafire: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
+        linkdrive: "https://drive.google.com/file/d/1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC/view",
+        link3: "",
         img: "https://terraria.org/favicon.ico",
         fecha: "2022/07/24",
         sizecomp: "380,91 MB",
@@ -54,7 +55,9 @@
       {
         title: "Tlauncher",
         version: "1.0.1.0",
-        link: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file",
+        linkmediafire: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file",
+        linkdrive: "https://drive.google.com/file/d/1VF91HGXgavLxWsW48l5QjQO1symA21b6/view?usp=sharing",
+        link3: "",
         img: "https://tlauncher.org/favicon.ico",
         fecha: "2022/07/24",
         sizecomp: "15,40 MB",
@@ -63,7 +66,9 @@
       {
         title: "Counter Strike GT",
         version: "1.6",
-        link: "https://www.mediafire.com/file/hzffbfjsy08jbnf/Counter+Strike+1.6+GT+Di_potato_pelator.7z/file",
+        linkmediafire: "https://www.mediafire.com/file/hzffbfjsy08jbnf/Counter+Strike+1.6+GT+Di_potato_pelator.7z/file",
+        linkdrive: "https://drive.google.com/file/d/1766NqTOb4F3r5T61VC_mVJlw1BePgMGI/view?usp=sharing",
+        link3: "",
         img: "https://icon-library.com/images/counter-strike-icon/counter-strike-icon-8.jpg",
         fecha: "2022/07/25",
         sizecomp: "152 MB",
@@ -72,7 +77,7 @@
       {
         title: "title ",
         version: "3",
-        link: "",
+        linkmediafire: "",
         img: "",
         fecha: "",
         sizecomp: "",
@@ -81,7 +86,7 @@
       {
         title: "title",
         version: "4",
-        link: "",
+        linkmediafire: "",
         img: "",
         fecha: "",
         sizecomp: "",
@@ -90,7 +95,7 @@
       {
         title: "title",
         version: "2",
-        link: "",
+        linkmediafire: "",
         img: "",
         fecha: "",
         sizecomp: "",
@@ -99,7 +104,7 @@
       {
         title: "title",
         version: "1",
-        link: "",
+        linkmediafire: "",
         img: "",
         fecha: "",
         sizecomp: "",
@@ -176,9 +181,9 @@
     function popupOn(title) {
       document.getElementById("popup").style.display = "block";
       var game = fetchTitle(title)[0];
-      //document.getElementById("popup").onclick = popupOff;
+      var botoncitos = ((game.linkdrive != "") ? "<button class='boton' onclick='window.open(\"" + game.linkdrive + "\")' >Gdrive</button>" : "") + ((game.linkmediafire != "") ? "<button class='boton' onclick='window.open(\"" + game.linkmediafire + "\")'>MediaFire</button>" : "") + ((game.link3 != "") ? "<button class='boton' onclick='window.open(\"" + game.link3 + "\")' >Otro</button>" : "");
       document.getElementById("popup").innerHTML = "<div class='thing'><div onclick='popupOff()' class='close'>x</div><h2><img src='"+game.img+"'></img>"+ game.title +
-      "</h2><br><div class='boton'>GDrive</div><button href=\""+ game.linkdrive + "\">GDrive</button></div>"
+      "</h2><br>"+botoncitos+"</div>"
     };
     
     function popupOff() {
