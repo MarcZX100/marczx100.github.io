@@ -7,7 +7,7 @@ var objJson = [
       linkmediafire: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
       linkdrive: "https://drive.google.com/file/d/1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC/view",
       link3: "",
-      img: "./imgs/terraria.ico",
+      img: "./imgs/terraria.png",
       fecha: "2022/07/24",
       sizecomp: "380,91 MB",
       sizedesc: "462,64 MB",
