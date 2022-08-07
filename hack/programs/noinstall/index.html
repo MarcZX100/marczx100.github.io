@@ -35,7 +35,8 @@
   </script>
   <!---NAVBAR-->
 
-  <script src="data.js"></script> <!--Importar el json-->
+  <script src="data.js"></script>
+  <!--Importar el json-->
   <script type="text/javascript">
     var current_page = 1;
     var records_per_page = 15;
@@ -175,7 +176,7 @@
         btn_next2.style.visibility = "hidden";
         btn_next3.style.visibility = "hidden";
       }
-      };
+    };
 
     function numPages() {
       return Math.ceil(objJson.length / records_per_page);
