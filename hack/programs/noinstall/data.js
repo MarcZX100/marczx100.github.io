@@ -3,7 +3,7 @@ var objJson = [
     {
       title: "Terraria",
       version: "1.4.3.6",
-      desc: "Terraria es un juego de supervivencia en el que el jugador debe construir una ciudad para sobrevivir. El mapa está formado por una gran cantidad de bloques que se pueden construir y destruir.",
+      desc: "Terraria es un videojuego de mundo abierto en 2D. Contiene elementos de construcción, exploración, aventura y combate, muy similar a juegos clásicos de la consola Super NES, como por ejemplo la serie Metroid, y a otras entregas más recientes como Minecraft.<br><br>El juego comienza en un mundo creado de forma aleatoria. El usuario puede personalizar a su personaje; cambiando el estilo de su pelo, camisa, pantalones, así como el color de los mismos, su género, entre otras personalizaciones que permite el juego. El jugador tiene a su disposición herramientas de distintos tipos, las cuales sirven para moldear el mundo y trabajar los recursos que el jugador encuentre (tales como minerales). Así mismo, el jugador inicia con una cantidad limitada de vida y puntos de magia, los cuales puede incrementar. También es posible mejorar al personaje incrementando su ataque, defensa, velocidad, entre otros, usando distintos objetos obtenibles en el transcurso de la partida. El jugador puede utilizar los materiales y recursos que va encontrando para crear nuevos objetos, tales como armas, armaduras, pociones, etc, siendo los objetos más avanzados los más difíciles de crear.",
       linkmediafire: "https://www.mediafire.com/file/uzrutrwgvurh6zk/Terraria_v1.4.3.6-Di_potato_pelator.zip/file",
       linkdrive: "https://drive.google.com/file/d/1PpdOETUCiaAZfLW8jKiJXDhghZKKClvC/view",
       link3: "",
@@ -16,7 +16,7 @@ var objJson = [
     {
       title: "Tlauncher",
       version: "1.0.1.0",
-      desc: "Tlauncher es una aplicación que permite que los usuarios puedan jugar a Minecraft sin necesidad de la versión original del juego.",
+      desc: "Tlauncher es una aplicación que permite que los usuarios puedan jugar a Minecraft sin necesidad de la versión original del juego. ",
       linkmediafire: "https://www.mediafire.com/file/ok8aifwec5p8hk2/MC_TLauncher_Di_potato_pelator.zip/file",
       linkdrive: "https://drive.google.com/file/d/1VF91HGXgavLxWsW48l5QjQO1symA21b6/view?usp=sharing",
       link3: "",
