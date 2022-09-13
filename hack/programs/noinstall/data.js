@@ -53,16 +53,16 @@ var objJson = [
       notas: ""
     },
     {
-      title: "title",
-      version: "4",
-      desc: "",
+      title: "Five Nights at Freddy's 2",
+      version: "Tampoco tengo idea",
+      desc: "Five Nights at Freddy's 2 (a menudo abreviado como FNaF 2) es un videojuego de terror independiente desarrollado y publicado por Scott Cawthon, siendo la segunda entrega de la serie de videojuegos de Five Nights at Freddy's y, cronológicamente, se establece antes de los acontecimientos del primer juego, actuando como una precuela.",
       linkmediafire: "",
-      linkdrive: "",
+      linkdrive: "https://drive.google.com/file/d/1tYNDFPd589hNTy62XHQxA6U9igkqNO8G/view?usp=sharing",
       link3: "",
-      img: "",
-      fecha: "",
-      sizecomp: "",
-      sizedesc: "",
+      img: "./imgs/fnaf2.jpg",
+      fecha: "2022/09/13",
+      sizecomp: "205,7 MB",
+      sizedesc: "212 MB",
       notas: ""
     },
     {
