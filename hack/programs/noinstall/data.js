@@ -66,16 +66,16 @@ var objJson = [
       notas: ""
     },
     {
-      title: "title",
-      version: "5",
-      desc: "",
+      title: "FNaF 3",
+      version: "3 supongo",
+      desc: "Five Nights at Freddy's 3 (a menudo abreviado como FNaF 3) es un videojuego de terror independiente del género «point-and-click» desarrollado y publicado por Scott Cawthon, siendo la tercera entrega de la serie de videojuegos de Five Nights at Freddy's y, cronológicamente, se establece treinta años después (2023) de los acontecimientos del primer juego.",
       linkmediafire: "",
-      linkdrive: "",
+      linkdrive: "https://drive.google.com/file/d/1tgmrJdzRawT43EskJsf53UJvnFMCMmwz/view?usp=sharing",
       link3: "",
-      img: "",
-      fecha: "",
-      sizecomp: "",
-      sizedesc: "",
+      img: "./imgs/fnaf2.png",
+      fecha: "2022/09/13",
+      sizecomp: "112 MB",
+      sizedesc: "113 MB",
       notas: ""
     },
     {
