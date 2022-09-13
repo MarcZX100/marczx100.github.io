@@ -40,16 +40,16 @@ var objJson = [
       notas: ""
     },
     {
-      title: "title",
-      version: "3",
-      desc: "",
+      title: "Five Nights at Freddy's",
+      version: "Ni idea",
+      desc: "Five Nights at Freddy's (traducido al español como Cinco Noches en Freddy's, y a menudo abreviado como FNaF) es una franquicia de medios basada en una serie de videojuegos de terror independientes, creada, diseñada, desarrollada y publicada por Scott Cawthon.",
       linkmediafire: "",
-      linkdrive: "",
+      linkdrive: "https://drive.google.com/file/d/1xzgLLoO8OcX-Z6d1CZXEB8GOX6x4E7au/view?usp=sharing",
       link3: "",
-      img: "",
-      fecha: "",
-      sizecomp: "",
-      sizedesc: "",
+      img: "./imgs/fnaf1.jpg",
+      fecha: "2022/09/13",
+      sizecomp: "219,3 MB",
+      sizedesc: "226 MB",
       notas: ""
     },
     {
