@@ -40,7 +40,7 @@ var objJson = [
       notas: ""
     },
     {
-      title: "Five Nights at Freddy's",
+      title: "FNaF",
       version: "Ni idea",
       desc: "Five Nights at Freddy's (traducido al español como Cinco Noches en Freddy's, y a menudo abreviado como FNaF) es una franquicia de medios basada en una serie de videojuegos de terror independientes, creada, diseñada, desarrollada y publicada por Scott Cawthon.",
       linkmediafire: "",
@@ -53,7 +53,7 @@ var objJson = [
       notas: ""
     },
     {
-      title: "Five Nights at Freddy's 2",
+      title: "FNaF 2",
       version: "Tampoco tengo idea",
       desc: "Five Nights at Freddy's 2 (a menudo abreviado como FNaF 2) es un videojuego de terror independiente desarrollado y publicado por Scott Cawthon, siendo la segunda entrega de la serie de videojuegos de Five Nights at Freddy's y, cronológicamente, se establece antes de los acontecimientos del primer juego, actuando como una precuela.",
       linkmediafire: "",
