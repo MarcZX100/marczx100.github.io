@@ -15,7 +15,7 @@ function openWindow(url) {
 function procreate() {
     changeTitle("Not a virus");
     for (var i = 0; i < 5; i++) {
-        openWindow('4.html');
+        openWindow('a.html');
     }
 }
 
