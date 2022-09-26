@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <!--INDEX-->
+    <title>En BETA</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../../styles/juegos.css" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../../files/favicon.jpg" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Mi web" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <!--INDEX-->
 
+
+
+    <script src="data.js"></script>
+    <!--Importar el json-->
+    <script type="text/javascript">
+      var current_page = 1;
+      var records_per_page = 15;
+
+      window.onkeydown = function (event) {
+        if (event.keyCode == 27) {
+          popupOff();
+        }
+      };
+
+      function fetchTitle(title) {
+        return objJson.filter(function (objJson) {
+          return objJson.title == title;
+        });
+      }
+
+      function popupOn(title) {
+        document.getElementById("popup").style.display = "block";
+        var game = fetchTitle(title)[0];
+        var botoncitos =
+          (game.linkdrive != "" ? "<button class='boton' onclick='window.open(\"" + game.linkdrive + "\")' >Gdrive</button>" : "") +
+          (game.linkmediafire != "" ? "<button class='boton' onclick='window.open(\"" + game.linkmediafire + "\")'>MediaFire</button>": "") +
+          (game.link3 != "" ? "<button class='boton' onclick='window.open(\"" + game.link3 + "\")' >Otro</button>" : "");
+        
+          document.getElementById("popup").innerHTML =
+          "<div class='thing'><div onclick='popupOff()' class='close'>x</div><h2><img src='" + game.img + "'></img>" +
+          game.title + "</h2><br><h4 class='vsize'><strong>v" + game.version + "</strong> - Subido el día " + game.fecha + " con un peso de " + game.sizecomp +
+          ".</h4><br><div class='desc'>" + game.desc + "</div><br>" + botoncitos +
+          "</div>";
+      }
+
+      function popupOff() {
+        document.getElementById("popup").style.display = "none";
+      } //
+
+      function prevPage() {
+        if (current_page > 1) {
+          current_page--;
+          changePage(current_page);
+        }
+      }
+
+      function prevXPage(num) {
+        if (current_page > num) {
+          current_page -= num;
+          changePage(current_page);
+        }
+      }
+
+      function firstPage() {
+        if (current_page > 1) {
+          current_page = 1;
+          changePage(current_page);
+        }
+      }
+
+      function nextPage() {
+        if (current_page < numPages()) {
+          current_page++;
+          changePage(current_page);
+        }
+      }
+
+      function nextXPage(num) {
+        if (current_page < numPages()) {
+          current_page += num;
+          changePage(current_page);
+        }
+      }
+
+      function lastPage() {
+        if (current_page < numPages()) {
+          current_page = numPages();
+          changePage(current_page);
+        }
+      }
+
+      function changePage(page) {
+        var btn_next = document.getElementById("btn_next");
+        var btn_next2 = document.getElementById("btn_next2");
+        var btn_next3 = document.getElementById("btn_next3");
+        var btn_prev = document.getElementById("btn_prev");
+        var btn_prev2 = document.getElementById("btn_prev2");
+        var btn_prev3 = document.getElementById("btn_prev3");
+        var listing_table = document.getElementById("pagination");
+        var page_span = document.getElementById("page");
+
+        // Validate page
+        if (page < 1) page = 1;
+        if (page > numPages()) page = numPages();
+
+        listing_table.innerHTML = "";
+
+        for (
+          var i = (page - 1) * records_per_page;
+          i < page * records_per_page && i < objJson.length;
+          i++
+        ) {
+          listing_table.innerHTML +=
+            "<div class='card'>" +
+            "<img src='" +
+            objJson[i].img +
+            "' height='128' width='128'></img>" +
+            "<h5><a href='javascript:void(0)' onclick='popupOn(" +
+            '"' +
+            objJson[i].title.toString() +
+            '"' +
+            ")'>" +
+            objJson[i].title +
+            "</a></h5>" +
+            "<br><h6>v" +
+            objJson[i].version +
+            "</h6><br></div>";
+        }
+        page_span.innerHTML = page + "/" + numPages();
+
+btn_first.innerHTML = 1;
+btn_first.onmouseover = function () {
+  btn_first.style.backgroundColor = "#f2f2f2";
+}
+btn_prev3.innerHTML = page - 3;
+btn_prev2.innerHTML = page - 2;
+btn_prev.innerHTML = page - 1;
+btn_next.innerHTML = page + 1;
+btn_next2.innerHTML = page + 2;
+btn_next3.innerHTML = page + 3;
+btn_last.innerHTML = numPages();
+
+        if (page >= 4) {
+          btn_prev3.style.visibility = "visible";
+          btn_prev2.style.visibility = "visible";
+          btn_prev.style.visibility = "visible";
+          btn_first.style.visibility = "visible";
+        } else if (page == 3) {
+          btn_prev2.style.visibility = "visible";
+          btn_prev.style.visibility = "visible";
+          btn_first.style.visibility = "visible";
+          btn_prev3.style.visibility = "hidden";
+        } else if (page == 2) {
+          btn_prev.style.visibility = "visible";
+          btn_first.style.visibility = "visible";
+          btn_prev2.style.visibility = "hidden";
+          btn_prev3.style.visibility = "hidden";
+        } else if (page == 1) {
+          btn_prev.style.visibility = "hidden";
+          btn_first.style.visibility = "hidden";
+          btn_prev2.style.visibility = "hidden";
+          btn_prev3.style.visibility = "hidden";
+        }
+
+        if (page <= numPages() - 3) {
+          btn_next3.style.visibility = "visible";
+          btn_next2.style.visibility = "visible";
+          btn_next.style.visibility = "visible";
+          btn_last.style.visibility = "visible";
+        } else if (page == numPages() - 2) {
+          btn_next3.style.visibility = "hidden";
+          btn_next2.style.visibility = "visible";
+          btn_next.style.visibility = "visible";
+          btn_last.style.visibility = "visible";
+        } else if (page == numPages() - 1) {
+          btn_next.style.visibility = "visible";
+          btn_last.style.visibility = "visible";
+          btn_next2.style.visibility = "hidden";
+          btn_next3.style.visibility = "hidden";
+        } else if (page == numPages()) {
+          btn_next.style.visibility = "hidden";
+          btn_last.style.visibility = "hidden";
+          btn_next2.style.visibility = "hidden";
+          btn_next3.style.visibility = "hidden";
+        }
+      }
+
+      function numPages() {
+        return Math.ceil(objJson.length / records_per_page);
+      }
+
+      window.onload = function () {
+        changePage(1);
+      };
+    </script>
+  </head>
+
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("/navbar.html");
+    });
+    </script>
+    <div id="popup"></div>
+    <div class="table">
+      <div id="pagination"></div>
+    </div>
+
+    <div class="pagination">
+      <a href="javascript:firstPage()" id="btn_first">❮❮</a>
+      <a href="javascript:prevXPage(3)" id="btn_prev3">❮ -3</a>
+      <a href="javascript:prevXPage(2)" id="btn_prev2">❮ -2</a>
+      <a href="javascript:prevPage()" id="btn_prev">❮ -1</a>
+      <a>Pag: <span id="page"></span></a>
+      <a href="javascript:nextPage()" id="btn_next">❯ +1</a>
+      <a href="javascript:nextXPage(2)" id="btn_next2">❯ +2</a>
+      <a href="javascript:nextXPage(3)" id="btn_next3">❯ +3</a>
+      <a href="javascript:lastPage()" id="btn_last">❯❯</a>
+    </div>
+  </body>
+</html>
