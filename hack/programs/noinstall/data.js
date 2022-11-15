@@ -134,7 +134,7 @@ var objJson = [
       title: "Rimworld (con DLCs)",
       version: "1.4.3541",
       desc: "RimWorld es un videojuego de construcción y gestión desarrollado por Ludeon Studios. El juego pone al jugador en el papel de gestor de una nueva colonia en un planeta del borde galáctico, donde los colonos deben sobrevivir a diversos eventos generados de manera aleatoria por la inteligencia artificial 'cuentacuentos'. El jugador no controla directamente a los colonos, salvo en situaciones de combate, sino que ordena la creación de estructuras, o la realización de diversas acciones, que los colonos, o 'peones' realizan cuando consideren adecuado (influenciado por las circunstancias del peón, sus habilidades, o los tipos de trabajos que tenga asignados).",
-      linkmediafire: "",
+      linkmediafire: "https://www.mediafire.com/file/6z4fefdwpxovrts/RimWorld.rar/file",
       linkdrive: "https://drive.google.com/file/d/1H8UsU72br1MghzfZhaeTbIDwBfhb4dpC/view?usp=sharing",
       link3: "",
       img: "./imgs/rimworld.png",
