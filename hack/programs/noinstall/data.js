@@ -144,17 +144,17 @@ var objJson = [
       notas: ""
     },
     {
-      title: "title",
-      version: "11",
-      desc: "",
-      linkmediafire: "",
-      linkdrive: "",
+      title: "Geometry Dash",
+      version: "1? Lo actualizan?",
+      desc: "Geometry Dash es un videojuego de plataformas creado en 2013 por el sueco Robert Topala (conocido también como RobTop), y posteriormente desarrollado por su empresa independiente RobTop Games. Su lanzamiento se produjo el 13 de agosto de 2013 para dispositivos móviles, y el 24 de diciembre de 2014 para la plataforma de distribución digital Steam.",
+      linkmediafire: "https://www.mediafire.com/file/5vj5x574p53gls4/Geometry_Dash_marc.zip/file",
+      linkdrive: "https://drive.google.com/file/d/1SzrWlHjNfY8Jk2M3joXSYlCfeBLfhVHX/view?usp=sharing",
       link3: "",
-      img: "",
-      fecha: "",
+      img: "./imgs/gd.png",
+      fecha: "2023/05/04", // Hace tiempo eh
       sizecomp: "",
-      sizedesc: "",
-      notas: ""
+      sizedesc: "196MB",
+      notas: "" // para q era esto
     },
     {
       title: "title",
