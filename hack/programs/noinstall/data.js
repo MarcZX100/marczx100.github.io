@@ -152,7 +152,7 @@ var objJson = [
     link3: "",
     img: "./imgs/gd.png",
     fecha: "2023/05/04", // Hace tiempo eh
-    sizecomp: "",
+    sizecomp: "164MB",
     sizedesc: "196MB",
     notas: "" // para q era esto
   },
