@@ -403,3 +403,15 @@ video {
 #github:hover {
   fill: #333;
 }
+a {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline dotted red;
+  font-weight: 1000;
+}
+
+a:active {
+  text-decoration: underline dotted rgb(56, 159, 255);
+}
